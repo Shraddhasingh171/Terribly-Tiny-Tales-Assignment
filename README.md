@@ -1,3 +1,5 @@
+Deployed Link:https://radiant-gnome-db1e08.netlify.app
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +70,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Images
+
+![Screenshot (238)](https://github.com/Shraddhasingh171/Terribly-Tiny-Tales-Assignment/assets/91796853/a9bb70f9-f761-4561-a50d-3c60d643f1a2)
+
+![Screenshot (239)](https://github.com/Shraddhasingh171/Terribly-Tiny-Tales-Assignment/assets/91796853/6b766ea1-a0ae-4d31-810c-6e96223613f2)
