@@ -20,6 +20,7 @@ function App() {
       .slice(0, 20)
       .map((item) => ({ word: item[0], frequency: item[1] }));
     setHistogramData(sortedData);
+
   };
 
   const handleExportButtonClick = () => {
@@ -33,7 +34,7 @@ function App() {
     document.body.appendChild(link);
     link.click();
   };
-  
+
   return (
     <div>
       <h1>Word Frequency Checker</h1>
@@ -51,11 +52,10 @@ function App() {
           <button type="button" onClick={handleExportButtonClick} className="btn">
             Export
           </button>
-          {/* <h2>Histogram</h2> */}
-          {/* Render the histogram using a charting library */}
         </div>
       )}
     </div>
   );
 }
+
 export default App;
