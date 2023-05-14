@@ -1,10 +1,12 @@
-import { useState } from 'react';
- function App() {
+import React, { useState } from "react";
+
+function App() {
   const [fileContent, setFileContent] = useState(null);
   const [histogramData, setHistogramData] = useState(null);
-   const handleFormSubmit = async (event) => {
+
+  const handleFormSubmit = async (event) => {
     event.preventDefault();
-    const response = await fetch('https://www.terriblytinytales.com/test.txt');
+    const response = await fetch("https://www.terriblytinytales.com/test.txt");
     const content = await response.text();
     setFileContent(content);
     const words = content.toLowerCase().match(/\w+/g);
@@ -12,27 +14,31 @@ import { useState } from 'react';
     words.forEach((word) => {
       frequencyMap[word] = (frequencyMap[word] || 0) + 1;
     });
+
     const sortedData = Object.entries(frequencyMap)
       .sort((a, b) => b[1] - a[1])
       .slice(0, 20)
       .map((item) => ({ word: item[0], frequency: item[1] }));
     setHistogramData(sortedData);
   };
-   const handleExportButtonClick = () => {
+
+  const handleExportButtonClick = () => {
     const csvContent = `data:text/csv;charset=utf-8,${histogramData
       .map((item) => `${item.word},${item.frequency}`)
-      .join('\n')}`;
+      .join("\n")}`;
     const encodedUri = encodeURI(csvContent);
-    const link = document.createElement('a');
-    link.setAttribute('href', encodedUri);
-    link.setAttribute('download', 'histogram-data.csv');
+    const link = document.createElement("a");
+    link.setAttribute("href", encodedUri);
+    link.setAttribute("download", "histogram-data.csv");
     document.body.appendChild(link);
     link.click();
   };
-   return (
+  
+  return (
     <div>
+      <h1>Word Frequency Checker</h1>
       <form onSubmit={handleFormSubmit}>
-        <button type="submit">Submit</button>
+        <button type="submit" className="btn">Submit</button>
       </form>
       {histogramData && (
         <div>
@@ -42,14 +48,14 @@ import { useState } from 'react';
               <li key={item.word}>{`${item.word}: ${item.frequency}`}</li>
             ))}
           </ul>
-          <button type="button" onClick={handleExportButtonClick}>
+          <button type="button" onClick={handleExportButtonClick} className="btn">
             Export
           </button>
-          <h2>Histogram</h2>
+          {/* <h2>Histogram</h2> */}
           {/* Render the histogram using a charting library */}
         </div>
       )}
     </div>
   );
 }
- export default App;
+export default App;
