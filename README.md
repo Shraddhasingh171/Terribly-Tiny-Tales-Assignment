@@ -1,78 +1,26 @@
-Deployed Link:https://radiant-gnome-db1e08.netlify.app
+Deployed Link: https://radiant-gnome-db1e08.netlify.app
 
-# Getting Started with Create React App
+Terribly Tiny Tales Word Frequency Histogram
+This is a React application that fetches text data from a URL and displays a histogram of the frequency of the top 20 most occurring words in the text. The user can also export the data in CSV format by clicking on the "Export" button.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Components
 
-## Available Scripts
+Instructions
+To run the application, follow these steps:
 
-In the project directory, you can run:
+1.Clone the repository to your local machine.
+2.Install the necessary dependencies by running npm install or yarn install.
+3.Start the development server by running npm start or yarn start.
+4.Open your web browser and navigate to http://localhost:3000 to view the application.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Conclusion
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This application demonstrates how to use React and third-party libraries to fetch and display data in a histogram chart. The code is well-commented and easy to understand, making it a good starting point for anyone interested in building similar applications.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 Images
 ![Screenshot (240)](https://github.com/Shraddhasingh171/Terribly-Tiny-Tales-Assignment/assets/91796853/0cc46c24-df72-473d-9b19-5a1d913ed64a)
 
 ![Screenshot (241)](https://github.com/Shraddhasingh171/Terribly-Tiny-Tales-Assignment/assets/91796853/95c99dc8-729e-485d-805c-adf06b3bb88b)
 
-
+In below webpage there is a button its written Export on click export we can easily download the data CSV format.
